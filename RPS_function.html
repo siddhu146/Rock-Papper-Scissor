@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>RPC GAME</title>
+        <style></style>
+
+    </head>
+
+    <body>
+        <button onclick="
+                        random=Math.random();//generates a number between 0 and 1
+                        syschoice();
+                        if(ch==='Rock')
+                        {
+                            alert('Tie');
+                        }
+                        else if(ch==='Papper')
+                        {
+                            alert('you lost');
+                            countSystem++;
+                        }
+                        else{
+                             alert('You won');
+                             countPlayer++;
+                        }
+                        ">
+            ROCK
+        </button>
+        <button onclick="
+                        random=Math.random();
+                        syschoice();
+                        if(ch==='Rock')
+                        {
+                            alert('You won');
+                            countPlayer++;
+                        }
+                        else if(ch==='Papper')
+                        {
+                            alert('Tie');
+                        }
+                        else 
+                        {
+                            alert('You lost');
+                            countSystem++;
+                        }">
+            PAPPER
+        </button>
+        <button onclick="
+                        random=Math.random();
+                        syschoice();
+                        if(ch==='Rock')
+                        {
+                            alert('You lost');
+                            countSystem++;
+                        }
+                        else if(ch==='Papper')
+                        {
+                            alert('You won');
+                            countPlayer++;
+                        }
+                        else {
+                            alert('Tie');
+                        }
+                        ">
+            SCISSOR
+        </button>
+        <button onclick="console.log(`score of player is ${countPlayer} and score of system is ${countSystem}`)">
+            score
+        </button>
+        <script>
+            let countPlayer=0;
+            let countSystem=0;
+            let ch='';
+            let random=0;
+            //function for the choice chosen by system
+            function syschoice(){
+                if(random<1/3)
+                {
+                    ch='Rock';
+                }
+                else if(random>=1/3 && random<=2/3)
+                {
+                    ch='Papper';
+                }
+                else ch='Scissor';
+            }
+        </script>
+
+
+    </body>
+
+</html>

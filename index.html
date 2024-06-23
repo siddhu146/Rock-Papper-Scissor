@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Rock Papper Scissor</title>
+        <link rel="stylesheet" href="RPCf.css"> 
+
+    </head>
+
+    <body>
+        <!--For title-->
+        <div class="title">
+            <h1 class="title-text">ROCK PAPPER SCISSOR GAME</h1>
+        </div>
+
+        <!--Gamebox container contains two empty space boxes and a conatiner for images-->
+        <div class="game-box">
+            <div class="empty"></div>
+
+            <div class="game">
+                <div class="icon">
+                    <button class="rock" onclick="game('ROCK');">
+                        <img class="image" src="RPCF images/rock.png">
+                    </button>
+                </div>
+                <div class="icon" style="margin-left: 10px;margin-right: 25px;">
+                    <button class="papper" onclick="game('PAPPER');">
+                        <img class="image" src="RPCF images/papper.png">
+                    </button>
+                </div>
+                <div class="icon">
+                    <button class="scissor" onclick="game('SCISSOR');">
+                        <img class="image" src="RPCF images/scissor.png">
+                    </button>
+                </div>
+            </div>
+
+            <div class="empty"></div>
+        </div>
+
+        <div class="score-container">
+            <div class="e1"></div>
+            <div class="score_main">
+                <div class="score-block">
+                    <h2 class="status"></h2>
+                </div>
+                <div class="score-block">
+                    <h3 class="system"></h3>
+                </div>
+                <div class="score-block">
+                    <h4 style="color:white; font-size: 20px;">YOUR SCORE</h4>
+                </div>
+                <div class="score-block">
+                    <h5 class="score"></h5>
+                </div>
+            </div>
+            <div class="e1"></div>
+        </div>
+        
+    </body>
+
+    <script src="RPCf.js"></script>
+
+</html>
